@@ -1,16 +1,32 @@
 {
-  "name": "Manage Grup Bot",
-  "description": "Untuk Bot Assistant Di Grup Telegram Anda!",
-  "logo": "https://telegra.ph/file/64e512ba290a7b3c5ec73.jpg",
-  "keywords": [
-    "telegram",
-    "best",
-    "group",
-    "manager",
-    "3"
-  ],
+    "name": "Manager",
+    "description": "Untuk Bot Assistant Di Grup Telegram Anda!",
+    "logo": "https://telegra.ph/file/64e512ba290a7b3c5ec73.jpg",
+    "keywords": [
+      "telegram",
+      "best",
+      "group",
+      "manager",
+      "3"
+    ],
   "repository": "https://github.com/CoeF/EmiliaHikari",
-  "success_url": "t.me/CodaciProject",
+  "addons": [
+          {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ],  
+  "success_url": "t.me/KingUserbotSupport",
   "stack": "container",
   "env": {
     "ENV": {
@@ -89,21 +105,5 @@
       "description": "Sudah Terisi",
       "value": "9KMN7D16IOUQ"
     }
-  },
-  "addons": [
-    {
-      "plan": "heroku-postgresql",
-      "options": {
-        "version": "12"
-      }
-    }
-  ],
-  "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-python"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    }
-  ],  
+  }
 }
