@@ -1,5 +1,5 @@
 {
-  "name": "Manager King",
+  "name": "Manage Grup Bot",
   "description": "Untuk Bot Assistant Di Grup Telegram Anda!",
   "logo": "https://telegra.ph/file/64e512ba290a7b3c5ec73.jpg",
   "keywords": [
@@ -97,7 +97,7 @@
         "version": "12"
       }
     }
-  ]
+  ],
   "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-python"
